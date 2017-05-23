@@ -1,0 +1,132 @@
+@import url("../fonts/Comfortaa.css");
+@import url("zui.min.css");
+@import url("zui-theme.min.css");
+.logoani_svg {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.loading {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 9999;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	display: none;
+}
+
+.slide {
+	margin-top: 40px;
+}
+
+.btn-more {
+	border-radius: 4px;
+	background: transparent;
+	color: #fff;
+	border: solid 1px #fff;
+}
+
+.btn-more:hover {
+	border-radius: 20px;
+	border: solid 1px #fff;
+	background: #fff;
+	color: #000;
+}
+
+.btn-more:hover,
+:active,
+:focus {
+	outline-offset: 0px !important;
+	outline: 0px !important;
+}
+
+.btn-more:focus {
+	outline-offset: 0px !important;
+	outline: 0px !important;
+	border-radius: 20px;
+	border: solid 1px #fff;
+	background: #fff;
+	color: #000;
+}
+
+.cardtags {
+	margin: 2px 4px 2px 4px;
+}
+
+.label-center {
+	display: block;
+	width: 65px;
+	margin: 0 auto;
+}
+
+.procard {
+	width: 350px;
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+}
+
+@media (max-width: 1024px) {
+	.procard {
+		width: calc(45.5% - 15px);
+	}
+}
+
+@media (max-width: 650px) {
+	.procard {
+		width: 90%;
+		margin-right: 0;
+	}
+}
+
+[class^="svg_udlogo_"] {
+	-webkit-transition: all .5s cubic-bezier(.175, .885, .32, 1);
+	-o-transition: all .5s cubic-bezier(.175, .885, .32, 1);
+	transition: all .5s cubic-bezier(.175, .885, .32, 1);
+}
+
+.outlink:after {
+	position: relative;
+	left: -10px;
+	display: inline-block;
+	display: none\9;
+	margin-left: 5px;
+	font-family: ZenIcon;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	content: '\e684';
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity .2s cubic-bezier(.175, .885, .32, 1), left .2s cubic-bezier(.175, .885, .32, 1), -webkit-transform .2s cubic-bezier(.175, .885, .32, 1);
+	-o-transition: transform .2s cubic-bezier(.175, .885, .32, 1), opacity .2s cubic-bezier(.175, .885, .32, 1), left .2s cubic-bezier(.175, .885, .32, 1), -o-transform .2s cubic-bezier(.175, .885, .32, 1);
+	transition: opacity .2s cubic-bezier(.175, .885, .32, 1), left .2s cubic-bezier(.175, .885, .32, 1), -webkit-transform .2s cubic-bezier(.175, .885, .32, 1);
+	transition: transform .2s cubic-bezier(.175, .885, .32, 1), opacity .2s cubic-bezier(.175, .885, .32, 1), left .2s cubic-bezier(.175, .885, .32, 1);
+	transition: transform .2s cubic-bezier(.175, .885, .32, 1), opacity .2s cubic-bezier(.175, .885, .32, 1), left .2s cubic-bezier(.175, .885, .32, 1), -webkit-transform .2s cubic-bezier(.175, .885, .32, 1), -o-transform .2s cubic-bezier(.175, .885, .32, 1);
+	-webkit-transform: scale(.5);
+	-ms-transform: scale(.5);
+	-o-transform: scale(.5);
+	transform: scale(.5);
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.outlink:hover:after {
+	left: 0;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}

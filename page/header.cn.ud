@@ -1,0 +1,70 @@
+<div class="navbar navbar-inverse navbar-fixed-top bg-primary">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+			<a href="" class="navbar-brand udlogo_link"><span class="udlogo_onlylogo"></span><span class="udlogo_onlytext"></span></a>
+		</div>
+
+		<nav class="navbar-collapse collapse" style="height: 0px;">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a title="关于"><i class="icon icon-info-sign"></i><span> 关于我们</span></a>
+				</li>
+				<li>
+					<a title="加入我们"><i class="icon icon-group"></i><span> 加入我们</span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<script>
+	$(".udlogo_onlylogo").load("img/udlogo_onlylogo.svg", function() {
+		$(".udlogo_onlylogo").css({
+			"height": "30px",
+			"width": "30px"
+		});
+
+		$(".svg_udlogo_onlylogo").css({
+			"height": "30px",
+			"width": "30px",
+			"fill": "#ddd",
+			"margin-top": "-5px"
+		});
+	});
+
+	$(".udlogo_onlytext").load("img/udlogo_onlytext.svg", function() {
+		$(".udlogo_onlytext").css({
+			"height": "30px",
+			"width": "30px"
+		});
+
+		$(".svg_udlogo_onlytext").css({
+			"height": "20px",
+			"width": "auto",
+			"fill": "#ddd",
+			"margin-top": "-5px"
+		});
+	});
+
+	$(".udlogo_link").mouseenter(function() {
+		$(".svg_udlogo_onlylogo").css({
+			"fill": "#fff"
+		});
+		$(".svg_udlogo_onlytext").css({
+			"fill": "#fff"
+		});
+	});
+	$(".udlogo_link").mouseleave(function() {
+		$(".svg_udlogo_onlylogo").css({
+			"fill": "#ddd"
+		});
+		$(".svg_udlogo_onlytext").css({
+			"fill": "#ddd"
+		});
+	});
+</script>

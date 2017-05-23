@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "name": "ChinaCraft",
+            "title": "ChinaCraft | 华夏文明",
+            "imgurl": "http://ogv6oecb7.bkt.clouddn.com/17-1-26/41213793-file_1485439931467_14c6d.png",
+            "summary": "摘要",
+            "type": "MOD",
+            "path": "chinacraft.html"
+        },
+        {
+            "name": "项目2",
+            "title": "项目2 | 项目2",
+            "imgurl": "http://ogv6oecb7.bkt.clouddn.com/17-1-26/41213793-file_1485439931467_14c6d.png",
+            "summary": "摘要2",
+            "type": "MOD",
+            "path": "chinacraft.html"
+        },
+        {
+            "name": "项目3",
+            "title": "项目3 | 项目3",
+            "imgurl": "http://ogv6oecb7.bkt.clouddn.com/17-1-26/41213793-file_1485439931467_14c6d.png",
+            "summary": "摘要3",
+            "type": "MOD",
+            "path": "chinacraft.html"
+        },
+        {
+            "name": "项目4",
+            "title": "项目4 | 项目4",
+            "imgurl": "http://ogv6oecb7.bkt.clouddn.com/17-1-26/41213793-file_1485439931467_14c6d.png",
+            "summary": "摘要4",
+            "type": "MOD",
+            "path": "chinacraft.html"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+<div class="container procards">
+	<h1 class="header-dividing outlink">我们的项目</h1>
+	<div class="cardsgroup">
+	<!--<a class="card">
+		<div class="media-wrapper">
+			<img src="http://ogv6oecb7.bkt.clouddn.com/17-1-26/41213793-file_1485439931467_14c6d.png" alt="">
+		</div>
+		<div class="caption">华夏文明 | ChinaCraft</div>
+		<div class="cardtags">
+			<span class="label label-badge label-center">MOD</span>
+		</div>
+		<div class="card-heading"><strong>ChinaCraft</strong></div>
+		<div class="card-content text-muted">描述</div>
+	</a>-->
+	</div>
+</div>
+
+<script type="text/javascript">
+	$.get('projects/projects.json', {}, function(result) {
+		var a = JSON.stringify(result).split("imgurl").length - 1;
+		var procard = "";
+		for(var i = 0; i < a; i++) {
+			procard = procard + "<a data-keys=\"haha\" class=\"card procard\" href=\"projects/" + result.projects[i].path + "\"><div class=\"media-wrapper\"><img src=\"" + result.projects[i].imgurl + "\" alt=\"\"></div><div class=\"caption\">";
+			procard = procard + result.projects[i].title + "</div><div class=\"cardtags\"><span class=\"label label-badge label-center\">" + result.projects[i].type
+			procard = procard + "</span></div><div class=\"card-heading\"><strong>" + result.projects[i].name + "</strong></div><div class=\"card-content text-muted\">" + result.projects[i].summary + "</div></a>"
+		}
+		$(".cardsgroup").append(procard);
+	});
+</script>
